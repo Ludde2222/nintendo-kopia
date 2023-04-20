@@ -46,31 +46,25 @@ function Navbar() {
   return (
     <>
       <div className="navcontainer">
-        <div className="navbar">
-          <img className="logo" src={images["logo.png"]} alt="logo"></img>
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <h1 className="navtext">NINTENDO SWITCH</h1>
-          </Link>
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <h1 className="navtext">SPEL</h1>
-          </Link>
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <h1 className="navtext">AMIIBO</h1>
-          </Link>
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <h1 className="navtext">NYHETER</h1>
-          </Link>
-          <Link to="contact" style={{ textDecoration: "none" }}>
-            <h1 className="navtext">SUPPORT</h1>{" "}
-          </Link>
-          <div className="navigation">
-            <img
-              className="search"
-              src={images["search.png"]}
-              alt="search"
-            ></img>
-            <img className="menu" src={images["menu.png"]} alt="menu"></img>'
-          </div>
+        <img className="logo" src={images["logo.png"]} alt="logo"></img>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <h1 className="navtext">NINTENDO SWITCH</h1>
+        </Link>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <h1 className="navtext">SPEL</h1>
+        </Link>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <h1 className="navtext">AMIIBO</h1>
+        </Link>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <h1 className="navtext">NYHETER</h1>
+        </Link>
+        <Link to="contact" style={{ textDecoration: "none" }}>
+          <h1 className="navtext">SUPPORT</h1>{" "}
+        </Link>
+        <div className="navigation">
+          <img className="search" src={images["search.png"]} alt="search"></img>
+          <img className="menu" src={images["menu.png"]} alt="menu"></img>'
         </div>
       </div>
     </>
