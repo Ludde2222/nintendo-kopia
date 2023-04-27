@@ -1,6 +1,8 @@
+import { createElement } from "react";
 import "../App.css";
 import data from "../settings/games.json";
 import data2 from "../settings/games2.json";
+import { type } from "@testing-library/user-event/dist/type";
 
 /*
 Hjälpsaker för att underlätta att hämta filer från foldern './img/
@@ -31,11 +33,25 @@ function MainContent() {
   );
 }
 
+function Test() {
+  return (
+    <>
+      <h1 className="hej"></h1>
+    </>
+  );
+}
+
 function FlexerContent(props) {
   return (
     <div className="grid-container">
       <div className="flexer-content1">
-        <img className="picture" src={images[props.src]} alt={props.alt}></img>
+        <img
+          className="picture"
+          id={props.picture}
+          src={images[props.src]}
+          alt={props.alt}
+        ></img>
+        {props.picture === "right" ? <Test /> : console.log("test2")}
       </div>
       <div className="flexer-content2">
         <h2 className="title">{props.titel}</h2>
@@ -51,6 +67,7 @@ function RightFlexerContent(props) {
     <div className="right-grid-container">
       <div className="flexer-content2">
         <h2 className="title2">{props.title2}</h2>
+        <h2 className="lansering2">{props.lansering2}</h2>
         <img
           className="picture2"
           src={release_images[props.src]}
@@ -71,6 +88,7 @@ function Flexer() {
         {data.map((el) => (
           <FlexerContent
             titel={el.titel}
+            picture={el.picture}
             key={el.id}
             src={el.src}
             alt={el.alt}
@@ -94,7 +112,12 @@ function RightFlexer() {
     <>
       <div className="pictures2">
         {data2.map((el) => (
-          <RightFlexerContent titel={el.title2} key={el.id} src={el.src} />
+          <RightFlexerContent
+            title2={el.title2}
+            key={el.id}
+            src={el.src}
+            lansering2={el.lansering2}
+          />
         ))}
       </div>
     </>

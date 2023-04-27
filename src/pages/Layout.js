@@ -21,13 +21,13 @@ function Years() {
   return (
     <div className="years">
       <h1 className="a">ALLA</h1>
-      <h1 className="a">2023</h1>
-      <h1 className="a">2022</h1>
-      <h1 className="a">2021</h1>
-      <h1 className="a">2020</h1>
-      <h1 className="a">2019</h1>
-      <h1 className="a">2018</h1>
-      <h1 className="">2017</h1>
+      <h1 className="b">2023</h1>
+      <h1 className="c">2022</h1>
+      <h1 className="d">2021</h1>
+      <h1 className="e">2020</h1>
+      <h1 className="f">2019</h1>
+      <h1 className="g">2018</h1>
+      <h1 className="h">2017</h1>
     </div>
   );
 }
@@ -35,6 +35,7 @@ function Years() {
 function ReleaseBar() {
   return (
     <>
+      <h1 className="border"></h1>
       <div className="relase-bar-container">
         <h1 className="relase-bar-text">RELEASELISTA</h1>
       </div>

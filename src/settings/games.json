@@ -4,14 +4,16 @@
     "src": "DisneyIllusionIsland.webp",
     "alt": "Factorio",
     "description": "Följ med Musse & Vänner på ett uppdrag att utforska den mystiska ön Monoth och rädda världen från katastrof i Disney ...",
-    "lansering": "LANSERING: 28 JULI, 2023"
+    "lansering": "LANSERING: 28 JULI, 2023",
+    "picture": "left"
   },
   {
     "titel": "PIKMIN",
     "src": "Pikmin4-DummyPS-EN-51c993b1.webp",
     "alt": "Pikmin4",
     "description": "Pikmin är tillbaka för ännu ett stort blomstrande uppdrag i Pikmin 4 för Nintendo Switch",
-    "lansering": "LANSERING: 21 JULI, 2023"
+    "lansering": "LANSERING: 21 JULI, 2023",
+    "picture": "right"
   },
 
   {
@@ -19,7 +21,8 @@
     "src": "RC_CEOuterbox_EU_NSW-EUR_2-9eb78989.webp",
     "lansering": "LANSERING: 30 JUNI, 2023",
     "description": "En Fantastiskt samlarutgåva Av Master Detectiv Archives: RAIN CODE MYSTERIFUL LIMITED EDITION",
-    "alt": "Pikmin4"
+    "alt": "Pikmin4",
+    "picture": "left"
   },
 
   {
@@ -27,7 +30,8 @@
     "src": "EU_RC_packshot_front_R_2-eaefc77c.webp",
     "alt": "Pikmin4",
     "description": "Ett helt nytt och mörkt fantasy/detektiv/actionspel från utvecklarna bakom Danganronpan-serien",
-    "lansering": "LANSERING: 30 JUNI 2023"
+    "lansering": "LANSERING: 30 JUNI 2023",
+    "picture": "right"
   },
 
   {
@@ -35,7 +39,8 @@
     "lansering": "LANSERING: 12 MAJ, 2023",
     "description": "Ett episkt äventyr som tar dig över Hyrules land och himmel väntar i The Legend of Zelda: Tears of the Kingdom för Ni...",
     "src": "TheLegendOfZeldaTearsOfTheKingdom_CollectorsEdition_DUMMY_pkg-ad35b558.webp",
-    "alt": "Pikmin4"
+    "alt": "Pikmin4",
+    "picture": "left"
   },
 
   {
@@ -43,7 +48,8 @@
     "lansering": "LANSERING: 12 MAJ, 2023",
     "description": "Ett episkt äventyr som tar dig över Hyrules land och himmel väntar detta storslagna äventyr",
     "src": "TLOZ_TearsOfTheKingdom_pkg_UKV-d742e9c7.webp",
-    "alt": "Pikmin4"
+    "alt": "Pikmin4",
+    "picture": "right"
   },
 
   {
@@ -51,12 +57,15 @@
     "lansering": "LANSERING: 21 APRIL, 2023",
     "description": "Rally the troops! Advance wars is marching to Nintendo Switch as Advance Wars 1+2: Re-Boot Camp!",
     "src": "AdvanceWars12RBC_pkg_PEGI_UKV-9baefc3d.webp",
-    "alt": "Pikmin4"
+    "alt": "Pikmin4",
+    "picture": "left"
   },
 
   {
     "titel": "",
+
     "src": "MinecraftLegends_Switch_pckg_PEGI-c0a9cb7c.webp",
-    "alt": "Pikmin4"
+    "alt": "Pikmin4",
+    "picture": "ri"
   }
 ]
