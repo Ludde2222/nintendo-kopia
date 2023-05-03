@@ -34,10 +34,10 @@
 
 .grid-container {
   position: relative;
-  left: 100px;
+  left: 41px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 25px;
 }
 
 .pictures {
@@ -48,14 +48,29 @@
   row-gap: 45px;
   column-gap: 390px;
   grid-template-columns: 40% 40%;
+  grid-row: 2 / 3;
+  grid-column: 2 / 2;
+  margin-left: 0px;
 }
 
-.picture2 {
+.lansering2 {
   position: relative;
-  top: -1160px;
-  right: 27%;
-  width: 90px;
-  height: 79px;
+  right: 27px;
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  align-self: end;
+  font-size: 7px;
+}
+
+.title2 {
+  position: relative;
+  right: 27px;
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  font-size: 16px;
+  align-self: flex-start;
+  width: 165px;
+  margin-bottom: -50px;
 }
 
 .title {
@@ -97,48 +112,23 @@
   margin: 20px;
 }
 
-.pictures {
-  grid-row: 2 / 3;
-  grid-column: 2 / 2;
-  margin-left: 0px;
-}
-
-.pictures2 {
+.flexer-content3 {
   position: relative;
-  top: 0px;
-  left: -30px;
-
-  grid-row: 5 / 5;
-  grid-column: 7 / 9;
-}
-
-.title2 {
   display: grid;
-  position: relative;
-  width: 150px;
-  font-size: 10px;
-  color: #6c6d74;
-  top: -1090px;
-  right: 40px;
-}
-
-.lansering2 {
-  position: relative;
-  top: -1100px;
-  left: -40px;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #b4b5ba;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+  grid-column: 3 / 3;
+  grid-row: 1 / 2;
+  top: 50px;
+  right: -1424px;
+  margin-bottom: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .hej {
   grid-row: 5/ 4;
   position: relative;
-  right: 0px;
   top: -265px;
+  right: 40px;
   height: 240px;
   margin-bottom: -260px;
   border-left: 1px solid #e5e5e7;
@@ -156,10 +146,10 @@
   padding: 20px;
   padding-left: 0px;
   height: 20px;
-  padding-right: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
   top: 149px;
-  left: 66.8%;
-  right: 19%;
+  left: 74.8%;
 }
 
 .border {
@@ -175,7 +165,7 @@
   left: 22.5%;
   letter-spacing: 1.5px;
   top: 14%;
-  column-gap: 65px;
+  column-gap: 55px;
   font-size: 5px;
   grid-row: 2 / 3;
   display: flex;

@@ -64,16 +64,14 @@ function FlexerContent(props) {
 
 function RightFlexerContent(props) {
   return (
-    <div className="right-grid-container">
-      <div className="flexer-content2">
-        <h2 className="title2">{props.title2}</h2>
-        <h2 className="lansering2">{props.lansering2}</h2>
-        <img
-          className="picture2"
-          src={release_images[props.src]}
-          alt={props.alt}
-        ></img>
-      </div>
+    <div className="flexer-content3">
+      <img
+        className="picture2"
+        src={release_images[props.src]}
+        alt={props.alt}
+      ></img>
+      <h2 className="title2">{props.title2}</h2>
+      <h2 className="lansering2">{props.lansering2}</h2>
     </div>
   );
 }
@@ -106,7 +104,7 @@ function Flexer() {
 
 function RightFlexer() {
   for (var i = 0; i < data2.length; i++) {
-    data[i].id = i;
+    data2[i].id = i;
   }
   return (
     <>
