@@ -70,8 +70,11 @@ function RightFlexerContent(props) {
         src={release_images[props.src]}
         alt={props.alt}
       ></img>
-      <h2 className="title2">{props.title2}</h2>
-      <h2 className="lansering2">{props.lansering2}</h2>
+      {props.picture === "right" ? <Test /> : console.log("test2")}
+      <div className="picture-2-container">
+        <h2 className="lansering2">{props.lansering2}</h2>
+        <h2 className="title2">{props.title2}</h2>
+      </div>
     </div>
   );
 }
@@ -108,15 +111,18 @@ function RightFlexer() {
   }
   return (
     <>
-      <div className="pictures2">
-        {data2.map((el) => (
-          <RightFlexerContent
-            title2={el.title2}
-            key={el.id}
-            src={el.src}
-            lansering2={el.lansering2}
-          />
-        ))}
+      <div className="right-grid-container">
+        <h1 className="relase-bar-text">RELEASELISTA</h1>
+        <div className="pictures2">
+          {data2.map((el) => (
+            <RightFlexerContent
+              title2={el.title2}
+              key={el.id}
+              src={el.src}
+              lansering2={el.lansering2}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

@@ -32,17 +32,6 @@ function Years() {
   );
 }
 
-function ReleaseBar() {
-  return (
-    <>
-      <h1 className="border"></h1>
-      <div className="relase-bar-container">
-        <h1 className="relase-bar-text">RELEASELISTA</h1>
-      </div>
-    </>
-  );
-}
-
 function Navbar() {
   return (
     <>
@@ -79,7 +68,6 @@ function GridContainer() {
         <Navbar />
         <Outlet />
         <Years />
-        <ReleaseBar />
       </div>
       ;
     </>
