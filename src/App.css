@@ -181,10 +181,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: absolute;
+    position: relative;
+    width: 0;
     left: 0px;
-    top: 200px;
+    top: 100px;
   }
+
+  .BorderPicture {
+    border-left: 0px;
+  }
+
   .navcontainer {
     display: flex;
     margin: 0px;
@@ -192,7 +198,7 @@
   }
 }
 
-@media only screen and (max-width: 1273px) {
+@media only screen and (max-width: 1290px) {
   .navcontainer {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -203,23 +209,36 @@
   }
 
   .logo {
-    align-self: flex-start;
+    position: absolute;
+    top: 0;
   }
 
   .navigation {
-    align-self: flex-start;
+    position: absolute;
+    top: 0;
   }
 }
 
-@media only screen and (max-width: 1667px) {
+@media only screen and (max-width: 1767px) {
   .right-grid-container {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 1518px) {
+  .right-grid-container {
+    display: none;
+  }
+
+  .years {
     display: none;
   }
 }
 
 @media only screen and (max-width: 711px) {
   .logo {
-    position: s;
+    position: static;
     top: 0;
   }
 
