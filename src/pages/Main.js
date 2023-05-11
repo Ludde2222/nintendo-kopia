@@ -27,16 +27,26 @@ const release_images = importAll(
 function MainContent() {
   return (
     <>
-      <Flexer />
-      <RightFlexer />
+      <div className="main-container">
+        <Flexer />
+        <RightFlexer />
+      </div>
     </>
   );
 }
 
-function Test() {
+function BorderPicture() {
   return (
     <>
-      <h1 className="hej"></h1>
+      <h1 className="BorderPicture"></h1>
+    </>
+  );
+}
+
+function RightBorderPicture() {
+  return (
+    <>
+      <h1 className="RightBorderPicture"></h1>
     </>
   );
 }
@@ -51,7 +61,7 @@ function FlexerContent(props) {
           src={images[props.src]}
           alt={props.alt}
         ></img>
-        {props.picture === "right" ? <Test /> : console.log("test2")}
+        {props.picture === "right" ? <BorderPicture /> : console.log("test2")}
       </div>
       <div className="flexer-content2">
         <h2 className="title">{props.titel}</h2>
@@ -70,10 +80,15 @@ function RightFlexerContent(props) {
         src={release_images[props.src]}
         alt={props.alt}
       ></img>
-      {props.picture === "right" ? <Test /> : console.log("test2")}
+      {props.picture === "right" ? (
+        <RightBorderPicture />
+      ) : (
+        console.log("test2")
+      )}
       <div className="picture-2-container">
-        <h2 className="lansering2">{props.lansering2}</h2>
+        {" "}
         <h2 className="title2">{props.title2}</h2>
+        <h2 className="lansering2">{props.lansering2}</h2>
       </div>
     </div>
   );
