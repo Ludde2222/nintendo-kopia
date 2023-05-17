@@ -35,6 +35,7 @@ function MainContent() {
   );
 }
 
+//function för att bilderna i mitten ska få en border i miten av varje bild
 function BorderPicture() {
   return (
     <>
@@ -43,6 +44,7 @@ function BorderPicture() {
   );
 }
 
+//fucntion för att den vita borden vid bilderna till höger renderas
 function RightBorderPicture() {
   return (
     <>

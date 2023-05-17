@@ -1,5 +1,6 @@
 .gridcontainer {
   display: grid;
+  /* nr det inte finns tillräckligt med rutnät för att fylla antalet skapade spår, komprimeras dessa tomma spår  */
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
 }
@@ -14,9 +15,8 @@
 
 .right-grid-container {
   position: absolute;
-  grid-row: 0 / 2;
   padding-left: 20px;
-  right: 20%;
+  right: 18%;
   top: 13.4%;
 }
 
@@ -62,7 +62,12 @@
 .lansering2 {
   align-self: start;
   grid-column: 2 / 2;
-  font-size: 7px;
+  font-size: 10px;
+  line-height: 1.4;
+  color: #b4b5ba;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .picture-2-container {
@@ -75,16 +80,24 @@
   top: -14px;
   font-size: 14px;
   letter-spacing: 1.5px;
-  color: #2d2e33;
+  color: rgb(45, 46, 51);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .title2 {
   margin: 0px;
   align-self: center;
-  justify-self: stretch;
+  justify-self: center;
   width: 190px;
-  flex-direction: co;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .desc {
@@ -96,13 +109,15 @@
 .date {
   position: relative;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.625;
-  -webkit-text-size-adjust: 100%;
-  background: #fff;
-  color: #6c6d74;
+  line-height: 1.4;
+  color: #b4b5ba;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   top: -30px;
-  width: 200px;
+  width: 220px;
 }
 
 .navtext {
@@ -148,7 +163,7 @@
 .BorderPicture {
   grid-row: 5/ 4;
   position: relative;
-  top: -265px;
+  top: 20%;
   right: 50px;
   height: 240px;
   margin-bottom: -260px;
@@ -198,6 +213,8 @@
   }
 }
 
+/* media query för att navbaren blir responsive  */
+
 @media only screen and (max-width: 1290px) {
   .navcontainer {
     display: flex;
@@ -226,6 +243,7 @@
   }
 }
 
+/* media query för att realase listan ska försvinna  */
 @media only screen and (max-width: 1518px) {
   .right-grid-container {
     display: none;
