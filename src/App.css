@@ -1,6 +1,6 @@
 .gridcontainer {
   display: grid;
-  /* nr det inte finns tillräckligt med rutnät för att fylla antalet skapade spår, komprimeras dessa tomma spår  */
+  /* när det inte finns tillräckligt med rutnät för att fylla antalet skapade spår, komprimeras dessa tomma spår  */
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
 }
@@ -193,13 +193,12 @@
 
 @media only screen and (max-width: 1239px) {
   .pictures {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    width: 0;
-    left: 0px;
-    top: 100px;
+    position: absolute;
+    left: 0;
+    top: 21%;
+    display: grid;
+    grid-template-columns: repeat(auto-fil, minmax(650px, 1fr));
+    grid-template-rows: repeat(auto-fil, minmax(100px, 1fr));
   }
 
   .BorderPicture {
@@ -210,6 +209,21 @@
     display: flex;
     margin: 0px;
     flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 936px) {
+  .grid-container {
+    left: 20vw;
+    top: 5vh;
+  }
+  .navcontainer {
+    margin-right: -20px;
+  }
+  .pictures {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 10px;
   }
 }
 
